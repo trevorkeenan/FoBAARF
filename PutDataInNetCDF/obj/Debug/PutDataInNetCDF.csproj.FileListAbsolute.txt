@@ -1,0 +1,12 @@
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\PutDataInNetCDF.exe.config
+C:\depot\FoBAARF\PutDataInNetCDF\obj\Debug\PutDataInNetCDF.csprojResolveAssemblyReference.cache
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\PutDataInNetCDF.exe
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\PutDataInNetCDF.pdb
+C:\depot\FoBAARF\PutDataInNetCDF\obj\Debug\PutDataInNetCDF.exe
+C:\depot\FoBAARF\PutDataInNetCDF\obj\Debug\PutDataInNetCDF.pdb
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\FSharp.Data.DesignTime.dll
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\FSharp.Data.dll
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\FSharp.Data.pdb
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\FSharp.Data.xml
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\FSharp.Data.DesignTime.pdb
+C:\depot\FoBAARF\PutDataInNetCDF\bin\Debug\FSharp.Data.DesignTime.xml

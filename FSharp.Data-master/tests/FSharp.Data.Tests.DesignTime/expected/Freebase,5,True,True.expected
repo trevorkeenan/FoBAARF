@@ -1,0 +1,1325 @@
+class FreebaseDataProvider
+    static member GetDataContext: () -> FreebaseDataProvider+ServiceTypes+FreebaseService
+    FreebaseDataContext._Create("AIzaSyBTcOKmU7L7gFB4AdyAz75JRmdHixdLYjY", "https://www.googleapis.com/freebase/v1", true, "2013-10-19T20:32:39", true, true)
+
+
+class FreebaseDataProvider+ServiceTypes+FreebaseService : FDR.Freebase.FreebaseDataContext
+    member Afval.nl: FreebaseDataProvider+ServiceTypes+DomainObjects+Afval.nl with get
+    this.GetDomainCategoryById("/user/afvalnl/default_domain/afval_nl")
+
+    member Arts and Entertainment: FreebaseDataProvider+ServiceTypes+DomainObjects+Arts and Entertainment with get
+    this.GetDomainCategoryById("/en/arts_entertainment")
+
+    member Commons: FreebaseDataProvider+ServiceTypes+DomainObjects+Commons with get
+    this.GetDomainCategoryById("/category/commons")
+
+    member Products and Services: FreebaseDataProvider+ServiceTypes+DomainObjects+Products and Services with get
+    this.GetDomainCategoryById("/en/products_services")
+
+    member Science and Technology: FreebaseDataProvider+ServiceTypes+DomainObjects+Science and Technology with get
+    this.GetDomainCategoryById("/en/science_technology")
+
+    member Society: FreebaseDataProvider+ServiceTypes+DomainObjects+Society with get
+    this.GetDomainCategoryById("/category/society")
+
+    member Special Interests: FreebaseDataProvider+ServiceTypes+DomainObjects+Special Interests with get
+    this.GetDomainCategoryById("/en/special_interests")
+
+    member Sports: FreebaseDataProvider+ServiceTypes+DomainObjects+Sports with get
+    this.GetDomainCategoryById("/category/sports")
+
+    member System: FreebaseDataProvider+ServiceTypes+DomainObjects+System with get
+    this.GetDomainCategoryById("/category/system")
+
+    member Time and Space: FreebaseDataProvider+ServiceTypes+DomainObjects+Time and Space with get
+    this.GetDomainCategoryById("/category/time-space")
+
+    member Transportation: FreebaseDataProvider+ServiceTypes+DomainObjects+Transportation with get
+    this.GetDomainCategoryById("/m/0cnr02s")
+
+    member Waste: FreebaseDataProvider+ServiceTypes+DomainObjects+Waste with get
+    this.GetDomainCategoryById("/en/waste")
+
+    member afval: FreebaseDataProvider+ServiceTypes+DomainObjects+afval with get
+    this.GetDomainCategoryById("/user/afvalnl/default_domain/afval")
+
+    member afvalnl: FreebaseDataProvider+ServiceTypes+DomainObjects+afvalnl with get
+    this.GetDomainCategoryById("/user/afvalnl")
+
+
+class FreebaseDataProvider+ServiceTypes
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Afval.nl : FDR.Freebase.FreebaseDomainCategory
+    member afvalnl's types: <NULL> with get
+    this.GetDomainById("/user/afvalnl/default_domain")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Arts and Entertainment : FDR.Freebase.FreebaseDomainCategory
+    member Books: FreebaseDataProvider+ServiceTypes+DomainObjects+BooksDomain with get
+    this.GetDomainById("/book")
+
+    member Broadcast: FreebaseDataProvider+ServiceTypes+DomainObjects+BroadcastDomain with get
+    this.GetDomainById("/broadcast")
+
+    member Comics: FreebaseDataProvider+ServiceTypes+DomainObjects+ComicsDomain with get
+    this.GetDomainById("/comic_books")
+
+    member Fictional Universes: FreebaseDataProvider+ServiceTypes+DomainObjects+Fictional Universes Domain with get
+    this.GetDomainById("/fictional_universe")
+
+    member Film: FreebaseDataProvider+ServiceTypes+DomainObjects+FilmDomain with get
+    this.GetDomainById("/film")
+
+    member Games: FreebaseDataProvider+ServiceTypes+DomainObjects+GamesDomain with get
+    this.GetDomainById("/games")
+
+    member Media: FreebaseDataProvider+ServiceTypes+DomainObjects+MediaDomain with get
+    this.GetDomainById("/media_common")
+
+    member Music: FreebaseDataProvider+ServiceTypes+DomainObjects+MusicDomain with get
+    this.GetDomainById("/music")
+
+    member Opera: FreebaseDataProvider+ServiceTypes+DomainObjects+OperaDomain with get
+    this.GetDomainById("/opera")
+
+    member Periodicals: FreebaseDataProvider+ServiceTypes+DomainObjects+PeriodicalsDomain with get
+    this.GetDomainById("/periodicals")
+
+    member Radio: FreebaseDataProvider+ServiceTypes+DomainObjects+RadioDomain with get
+    this.GetDomainById("/radio")
+
+    member TV: FreebaseDataProvider+ServiceTypes+DomainObjects+TVDomain with get
+    this.GetDomainById("/tv")
+
+    member Theater: FreebaseDataProvider+ServiceTypes+DomainObjects+TheaterDomain with get
+    this.GetDomainById("/theater")
+
+    member Video Games: FreebaseDataProvider+ServiceTypes+DomainObjects+Video Games Domain with get
+    this.GetDomainById("/cvg")
+
+    member Visual Art: FreebaseDataProvider+ServiceTypes+DomainObjects+Visual Art Domain with get
+    this.GetDomainById("/visual_art")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Commons : FDR.Freebase.FreebaseDomainCategory
+    member American football: FreebaseDataProvider+ServiceTypes+DomainObjects+American football Domain with get
+    this.GetDomainById("/american_football")
+
+    member Amusement Parks: FreebaseDataProvider+ServiceTypes+DomainObjects+Amusement Parks Domain with get
+    this.GetDomainById("/amusement_parks")
+
+    member Architecture: FreebaseDataProvider+ServiceTypes+DomainObjects+ArchitectureDomain with get
+    this.GetDomainById("/architecture")
+
+    member Astronomy: FreebaseDataProvider+ServiceTypes+DomainObjects+AstronomyDomain with get
+    this.GetDomainById("/astronomy")
+
+    member Automotive: FreebaseDataProvider+ServiceTypes+DomainObjects+AutomotiveDomain with get
+    this.GetDomainById("/automotive")
+
+    member Aviation: FreebaseDataProvider+ServiceTypes+DomainObjects+AviationDomain with get
+    this.GetDomainById("/aviation")
+
+    member Awards: FreebaseDataProvider+ServiceTypes+DomainObjects+AwardsDomain with get
+    this.GetDomainById("/award")
+
+    member Baseball: FreebaseDataProvider+ServiceTypes+DomainObjects+BaseballDomain with get
+    this.GetDomainById("/baseball")
+
+    member Basketball: FreebaseDataProvider+ServiceTypes+DomainObjects+BasketballDomain with get
+    this.GetDomainById("/basketball")
+
+    member Bicycles: FreebaseDataProvider+ServiceTypes+DomainObjects+BicyclesDomain with get
+    this.GetDomainById("/bicycles")
+
+    member Biology: FreebaseDataProvider+ServiceTypes+DomainObjects+BiologyDomain with get
+    this.GetDomainById("/biology")
+
+    member Boats: FreebaseDataProvider+ServiceTypes+DomainObjects+BoatsDomain with get
+    this.GetDomainById("/boats")
+
+    member Books: FreebaseDataProvider+ServiceTypes+DomainObjects+BooksDomain with get
+    this.GetDomainById("/book")
+
+    member Boxing: FreebaseDataProvider+ServiceTypes+DomainObjects+BoxingDomain with get
+    this.GetDomainById("/boxing")
+
+    member Broadcast: FreebaseDataProvider+ServiceTypes+DomainObjects+BroadcastDomain with get
+    this.GetDomainById("/broadcast")
+
+    member Business: FreebaseDataProvider+ServiceTypes+DomainObjects+BusinessDomain with get
+    this.GetDomainById("/business")
+
+    member Celebrities: FreebaseDataProvider+ServiceTypes+DomainObjects+CelebritiesDomain with get
+    this.GetDomainById("/celebrities")
+
+    member Chemistry: FreebaseDataProvider+ServiceTypes+DomainObjects+ChemistryDomain with get
+    this.GetDomainById("/chemistry")
+
+    member Comics: FreebaseDataProvider+ServiceTypes+DomainObjects+ComicsDomain with get
+    this.GetDomainById("/comic_books")
+
+    member Computers: FreebaseDataProvider+ServiceTypes+DomainObjects+ComputersDomain with get
+    this.GetDomainById("/computer")
+
+    member Conferences and Conventions: FreebaseDataProvider+ServiceTypes+DomainObjects+Conferences and Conventions Domain with get
+    this.GetDomainById("/conferences")
+
+    member Cricket: FreebaseDataProvider+ServiceTypes+DomainObjects+CricketDomain with get
+    this.GetDomainById("/cricket")
+
+    member Digicams: FreebaseDataProvider+ServiceTypes+DomainObjects+DigicamsDomain with get
+    this.GetDomainById("/digicams")
+
+    member Education: FreebaseDataProvider+ServiceTypes+DomainObjects+EducationDomain with get
+    this.GetDomainById("/education")
+
+    member Engineering: FreebaseDataProvider+ServiceTypes+DomainObjects+EngineeringDomain with get
+    this.GetDomainById("/engineering")
+
+    member Event: FreebaseDataProvider+ServiceTypes+DomainObjects+EventDomain with get
+    this.GetDomainById("/event")
+
+    member Exhibitions: FreebaseDataProvider+ServiceTypes+DomainObjects+ExhibitionsDomain with get
+    this.GetDomainById("/exhibitions")
+
+    member Fashion, Clothing and Textiles: FreebaseDataProvider+ServiceTypes+DomainObjects+Fashion with get
+    this.GetDomainById("/fashion")
+
+    member Fictional Universes: FreebaseDataProvider+ServiceTypes+DomainObjects+Fictional Universes Domain with get
+    this.GetDomainById("/fictional_universe")
+
+    member Film: FreebaseDataProvider+ServiceTypes+DomainObjects+FilmDomain with get
+    this.GetDomainById("/film")
+
+    member Food & Drink: FreebaseDataProvider+ServiceTypes+DomainObjects+Food & Drink Domain with get
+    this.GetDomainById("/food")
+
+    member Games: FreebaseDataProvider+ServiceTypes+DomainObjects+GamesDomain with get
+    this.GetDomainById("/games")
+
+    member Geology: FreebaseDataProvider+ServiceTypes+DomainObjects+GeologyDomain with get
+    this.GetDomainById("/geology")
+
+    member Government: FreebaseDataProvider+ServiceTypes+DomainObjects+GovernmentDomain with get
+    this.GetDomainById("/government")
+
+    member Hobbies and Interests: FreebaseDataProvider+ServiceTypes+DomainObjects+Hobbies and Interests Domain with get
+    this.GetDomainById("/interests")
+
+    member Ice Hockey: FreebaseDataProvider+ServiceTypes+DomainObjects+Ice Hockey Domain with get
+    this.GetDomainById("/ice_hockey")
+
+    member Influence: FreebaseDataProvider+ServiceTypes+DomainObjects+InfluenceDomain with get
+    this.GetDomainById("/influence")
+
+    member Internet: FreebaseDataProvider+ServiceTypes+DomainObjects+InternetDomain with get
+    this.GetDomainById("/internet")
+
+    member Language: FreebaseDataProvider+ServiceTypes+DomainObjects+LanguageDomain with get
+    this.GetDomainById("/language")
+
+    member Law: FreebaseDataProvider+ServiceTypes+DomainObjects+LawDomain with get
+    this.GetDomainById("/law")
+
+    member Library: FreebaseDataProvider+ServiceTypes+DomainObjects+LibraryDomain with get
+    this.GetDomainById("/library")
+
+    member Location: FreebaseDataProvider+ServiceTypes+DomainObjects+LocationDomain with get
+    this.GetDomainById("/location")
+
+    member Martial Arts: FreebaseDataProvider+ServiceTypes+DomainObjects+Martial Arts Domain with get
+    this.GetDomainById("/martial_arts")
+
+    member Measurement Unit: FreebaseDataProvider+ServiceTypes+DomainObjects+Measurement Unit Domain with get
+    this.GetDomainById("/measurement_unit")
+
+    member Media: FreebaseDataProvider+ServiceTypes+DomainObjects+MediaDomain with get
+    this.GetDomainById("/media_common")
+
+    member Medicine: FreebaseDataProvider+ServiceTypes+DomainObjects+MedicineDomain with get
+    this.GetDomainById("/medicine")
+
+    member Meteorology: FreebaseDataProvider+ServiceTypes+DomainObjects+MeteorologyDomain with get
+    this.GetDomainById("/meteorology")
+
+    member Military: FreebaseDataProvider+ServiceTypes+DomainObjects+MilitaryDomain with get
+    this.GetDomainById("/military")
+
+    member Music: FreebaseDataProvider+ServiceTypes+DomainObjects+MusicDomain with get
+    this.GetDomainById("/music")
+
+    member Olympics: FreebaseDataProvider+ServiceTypes+DomainObjects+OlympicsDomain with get
+    this.GetDomainById("/olympics")
+
+    member Opera: FreebaseDataProvider+ServiceTypes+DomainObjects+OperaDomain with get
+    this.GetDomainById("/opera")
+
+    member Organization: FreebaseDataProvider+ServiceTypes+DomainObjects+OrganizationDomain with get
+    this.GetDomainById("/organization")
+
+    member People: FreebaseDataProvider+ServiceTypes+DomainObjects+PeopleDomain with get
+    this.GetDomainById("/people")
+
+    member Periodicals: FreebaseDataProvider+ServiceTypes+DomainObjects+PeriodicalsDomain with get
+    this.GetDomainById("/periodicals")
+
+    member Physical Geography: FreebaseDataProvider+ServiceTypes+DomainObjects+Physical Geography Domain with get
+    this.GetDomainById("/geography")
+
+    member Physics: FreebaseDataProvider+ServiceTypes+DomainObjects+PhysicsDomain with get
+    this.GetDomainById("/physics")
+
+    member Projects: FreebaseDataProvider+ServiceTypes+DomainObjects+ProjectsDomain with get
+    this.GetDomainById("/projects")
+
+    member Protected Places: FreebaseDataProvider+ServiceTypes+DomainObjects+Protected Places Domain with get
+    this.GetDomainById("/protected_sites")
+
+    member Radio: FreebaseDataProvider+ServiceTypes+DomainObjects+RadioDomain with get
+    this.GetDomainById("/radio")
+
+    member Rail: FreebaseDataProvider+ServiceTypes+DomainObjects+RailDomain with get
+    this.GetDomainById("/rail")
+
+    member Religion: FreebaseDataProvider+ServiceTypes+DomainObjects+ReligionDomain with get
+    this.GetDomainById("/religion")
+
+    member Royalty and Nobility: FreebaseDataProvider+ServiceTypes+DomainObjects+Royalty and Nobility Domain with get
+    this.GetDomainById("/royalty")
+
+    member Skiing: FreebaseDataProvider+ServiceTypes+DomainObjects+SkiingDomain with get
+    this.GetDomainById("/skiing")
+
+    member Soccer: FreebaseDataProvider+ServiceTypes+DomainObjects+SoccerDomain with get
+    this.GetDomainById("/soccer")
+
+    member Spaceflight: FreebaseDataProvider+ServiceTypes+DomainObjects+SpaceflightDomain with get
+    this.GetDomainById("/spaceflight")
+
+    member Sports: FreebaseDataProvider+ServiceTypes+DomainObjects+SportsDomain with get
+    this.GetDomainById("/sports")
+
+    member Symbols: FreebaseDataProvider+ServiceTypes+DomainObjects+SymbolsDomain with get
+    this.GetDomainById("/symbols")
+
+    member TV: FreebaseDataProvider+ServiceTypes+DomainObjects+TVDomain with get
+    this.GetDomainById("/tv")
+
+    member Tennis: FreebaseDataProvider+ServiceTypes+DomainObjects+TennisDomain with get
+    this.GetDomainById("/tennis")
+
+    member Theater: FreebaseDataProvider+ServiceTypes+DomainObjects+TheaterDomain with get
+    this.GetDomainById("/theater")
+
+    member Time: FreebaseDataProvider+ServiceTypes+DomainObjects+TimeDomain with get
+    this.GetDomainById("/time")
+
+    member Transportation: FreebaseDataProvider+ServiceTypes+DomainObjects+TransportationDomain with get
+    this.GetDomainById("/transportation")
+
+    member Travel: FreebaseDataProvider+ServiceTypes+DomainObjects+TravelDomain with get
+    this.GetDomainById("/travel")
+
+    member Video Games: FreebaseDataProvider+ServiceTypes+DomainObjects+Video Games Domain with get
+    this.GetDomainById("/cvg")
+
+    member Visual Art: FreebaseDataProvider+ServiceTypes+DomainObjects+Visual Art Domain with get
+    this.GetDomainById("/visual_art")
+
+    member Zoos and Aquariums: FreebaseDataProvider+ServiceTypes+DomainObjects+Zoos and Aquariums Domain with get
+    this.GetDomainById("/zoos")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Products and Services : FDR.Freebase.FreebaseDomainCategory
+    member Automotive: FreebaseDataProvider+ServiceTypes+DomainObjects+AutomotiveDomain with get
+    this.GetDomainById("/automotive")
+
+    member Business: FreebaseDataProvider+ServiceTypes+DomainObjects+BusinessDomain with get
+    this.GetDomainById("/business")
+
+    member Digicams: FreebaseDataProvider+ServiceTypes+DomainObjects+DigicamsDomain with get
+    this.GetDomainById("/digicams")
+
+    member Food & Drink: FreebaseDataProvider+ServiceTypes+DomainObjects+Food & Drink Domain with get
+    this.GetDomainById("/food")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Science and Technology : FDR.Freebase.FreebaseDomainCategory
+    member Astronomy: FreebaseDataProvider+ServiceTypes+DomainObjects+AstronomyDomain with get
+    this.GetDomainById("/astronomy")
+
+    member Biology: FreebaseDataProvider+ServiceTypes+DomainObjects+BiologyDomain with get
+    this.GetDomainById("/biology")
+
+    member Chemistry: FreebaseDataProvider+ServiceTypes+DomainObjects+ChemistryDomain with get
+    this.GetDomainById("/chemistry")
+
+    member Computers: FreebaseDataProvider+ServiceTypes+DomainObjects+ComputersDomain with get
+    this.GetDomainById("/computer")
+
+    member Engineering: FreebaseDataProvider+ServiceTypes+DomainObjects+EngineeringDomain with get
+    this.GetDomainById("/engineering")
+
+    member Geology: FreebaseDataProvider+ServiceTypes+DomainObjects+GeologyDomain with get
+    this.GetDomainById("/geology")
+
+    member Internet: FreebaseDataProvider+ServiceTypes+DomainObjects+InternetDomain with get
+    this.GetDomainById("/internet")
+
+    member Medicine: FreebaseDataProvider+ServiceTypes+DomainObjects+MedicineDomain with get
+    this.GetDomainById("/medicine")
+
+    member Meteorology: FreebaseDataProvider+ServiceTypes+DomainObjects+MeteorologyDomain with get
+    this.GetDomainById("/meteorology")
+
+    member Physics: FreebaseDataProvider+ServiceTypes+DomainObjects+PhysicsDomain with get
+    this.GetDomainById("/physics")
+
+    member Spaceflight: FreebaseDataProvider+ServiceTypes+DomainObjects+SpaceflightDomain with get
+    this.GetDomainById("/spaceflight")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Society : FDR.Freebase.FreebaseDomainCategory
+    member Awards: FreebaseDataProvider+ServiceTypes+DomainObjects+AwardsDomain with get
+    this.GetDomainById("/award")
+
+    member Celebrities: FreebaseDataProvider+ServiceTypes+DomainObjects+CelebritiesDomain with get
+    this.GetDomainById("/celebrities")
+
+    member Conferences and Conventions: FreebaseDataProvider+ServiceTypes+DomainObjects+Conferences and Conventions Domain with get
+    this.GetDomainById("/conferences")
+
+    member Education: FreebaseDataProvider+ServiceTypes+DomainObjects+EducationDomain with get
+    this.GetDomainById("/education")
+
+    member Exhibitions: FreebaseDataProvider+ServiceTypes+DomainObjects+ExhibitionsDomain with get
+    this.GetDomainById("/exhibitions")
+
+    member Government: FreebaseDataProvider+ServiceTypes+DomainObjects+GovernmentDomain with get
+    this.GetDomainById("/government")
+
+    member Influence: FreebaseDataProvider+ServiceTypes+DomainObjects+InfluenceDomain with get
+    this.GetDomainById("/influence")
+
+    member Language: FreebaseDataProvider+ServiceTypes+DomainObjects+LanguageDomain with get
+    this.GetDomainById("/language")
+
+    member Law: FreebaseDataProvider+ServiceTypes+DomainObjects+LawDomain with get
+    this.GetDomainById("/law")
+
+    member Library: FreebaseDataProvider+ServiceTypes+DomainObjects+LibraryDomain with get
+    this.GetDomainById("/library")
+
+    member Organization: FreebaseDataProvider+ServiceTypes+DomainObjects+OrganizationDomain with get
+    this.GetDomainById("/organization")
+
+    member People: FreebaseDataProvider+ServiceTypes+DomainObjects+PeopleDomain with get
+    this.GetDomainById("/people")
+
+    member Religion: FreebaseDataProvider+ServiceTypes+DomainObjects+ReligionDomain with get
+    this.GetDomainById("/religion")
+
+    member Royalty and Nobility: FreebaseDataProvider+ServiceTypes+DomainObjects+Royalty and Nobility Domain with get
+    this.GetDomainById("/royalty")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Special Interests : FDR.Freebase.FreebaseDomainCategory
+    member Amusement Parks: FreebaseDataProvider+ServiceTypes+DomainObjects+Amusement Parks Domain with get
+    this.GetDomainById("/amusement_parks")
+
+    member Architecture: FreebaseDataProvider+ServiceTypes+DomainObjects+ArchitectureDomain with get
+    this.GetDomainById("/architecture")
+
+    member Fashion, Clothing and Textiles: FreebaseDataProvider+ServiceTypes+DomainObjects+Fashion with get
+    this.GetDomainById("/fashion")
+
+    member Hobbies and Interests: FreebaseDataProvider+ServiceTypes+DomainObjects+Hobbies and Interests Domain with get
+    this.GetDomainById("/interests")
+
+    member Military: FreebaseDataProvider+ServiceTypes+DomainObjects+MilitaryDomain with get
+    this.GetDomainById("/military")
+
+    member Symbols: FreebaseDataProvider+ServiceTypes+DomainObjects+SymbolsDomain with get
+    this.GetDomainById("/symbols")
+
+    member Travel: FreebaseDataProvider+ServiceTypes+DomainObjects+TravelDomain with get
+    this.GetDomainById("/travel")
+
+    member Zoos and Aquariums: FreebaseDataProvider+ServiceTypes+DomainObjects+Zoos and Aquariums Domain with get
+    this.GetDomainById("/zoos")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Sports : FDR.Freebase.FreebaseDomainCategory
+    member American football: FreebaseDataProvider+ServiceTypes+DomainObjects+American football Domain with get
+    this.GetDomainById("/american_football")
+
+    member Baseball: FreebaseDataProvider+ServiceTypes+DomainObjects+BaseballDomain with get
+    this.GetDomainById("/baseball")
+
+    member Basketball: FreebaseDataProvider+ServiceTypes+DomainObjects+BasketballDomain with get
+    this.GetDomainById("/basketball")
+
+    member Boxing: FreebaseDataProvider+ServiceTypes+DomainObjects+BoxingDomain with get
+    this.GetDomainById("/boxing")
+
+    member Cricket: FreebaseDataProvider+ServiceTypes+DomainObjects+CricketDomain with get
+    this.GetDomainById("/cricket")
+
+    member Ice Hockey: FreebaseDataProvider+ServiceTypes+DomainObjects+Ice Hockey Domain with get
+    this.GetDomainById("/ice_hockey")
+
+    member Martial Arts: FreebaseDataProvider+ServiceTypes+DomainObjects+Martial Arts Domain with get
+    this.GetDomainById("/martial_arts")
+
+    member Olympics: FreebaseDataProvider+ServiceTypes+DomainObjects+OlympicsDomain with get
+    this.GetDomainById("/olympics")
+
+    member Skiing: FreebaseDataProvider+ServiceTypes+DomainObjects+SkiingDomain with get
+    this.GetDomainById("/skiing")
+
+    member Soccer: FreebaseDataProvider+ServiceTypes+DomainObjects+SoccerDomain with get
+    this.GetDomainById("/soccer")
+
+    member Sports: FreebaseDataProvider+ServiceTypes+DomainObjects+SportsDomain with get
+    this.GetDomainById("/sports")
+
+    member Tennis: FreebaseDataProvider+ServiceTypes+DomainObjects+TennisDomain with get
+    this.GetDomainById("/tennis")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+System : FDR.Freebase.FreebaseDomainCategory
+    member Common: FreebaseDataProvider+ServiceTypes+DomainObjects+CommonDomain with get
+    this.GetDomainById("/common")
+
+    member Data World: FreebaseDataProvider+ServiceTypes+DomainObjects+Data World Domain with get
+    this.GetDomainById("/dataworld")
+
+    member Freebase: FreebaseDataProvider+ServiceTypes+DomainObjects+FreebaseDomain with get
+    this.GetDomainById("/freebase")
+
+    member Metaweb System Types: FreebaseDataProvider+ServiceTypes+DomainObjects+Metaweb System Types Domain with get
+    this.GetDomainById("/type")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+American football Domain : FDR.Freebase.FreebaseDomain
+    member American football coach positions: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_coach_positionDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_coach_position")
+
+    member American football conferences: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_conferenceDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_conference")
+
+    member American football divisions: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_divisionDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_division")
+
+    member American football games: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_gameDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_game")
+
+    member American football head coaches: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_coachDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_coach")
+
+    member American football players: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_playerDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_player")
+
+    member American football teams: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_teamDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_team")
+
+    member Football Scoring Events: FreebaseDataProvider+ServiceTypes+American_football+American_football+Football_scoring_eventDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/football_scoring_event")
+
+    member NFL Games: FreebaseDataProvider+ServiceTypes+American_football+American_football+Nfl_gameDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/nfl_game")
+
+    member Scoreboard Quarters: FreebaseDataProvider+ServiceTypes+American_football+American_football+Scoreboard_quarterDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/scoreboard_quarter")
+
+    member Super bowls: FreebaseDataProvider+ServiceTypes+American_football+American_football+Super_bowlDataCollection with get
+    this.GetObjectsOfTypeId("/american_football/super_bowl")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+Amusement Parks Domain : FDR.Freebase.FreebaseDomain
+    member Amusement Park Areas: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Amusement_park_areaDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/amusement_park_area")
+
+    member Amusement Parks: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+ParkDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/park")
+
+    member Amusement Ride Designers: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Ride_designerDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/ride_designer")
+
+    member Amusement Ride Manufacturers: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Ride_manufacturerDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/ride_manufacturer")
+
+    member Amusement Ride Themes: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Ride_themeDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/ride_theme")
+
+    member Amusement Ride Types: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Ride_typeDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/ride_type")
+
+    member Amusement Rides: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+RideDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/ride")
+
+    member Disney Ride Tickets: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Disney_ride_ticketDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/disney_ride_ticket")
+
+    member Disney Rides: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Disney_rideDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/disney_ride")
+
+    member Roller Coaster Materials: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Roller_coaster_materialDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/roller_coaster_material")
+
+    member Roller Coaster Propulsion Systems: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Roller_coaster_propulsion_systemDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/roller_coaster_propulsion_system")
+
+    member Roller Coaster Train Configurations: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Roller_coaster_train_configurationDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/roller_coaster_train_configuration")
+
+    member Roller Coasters: FreebaseDataProvider+ServiceTypes+Amusement_parks+Amusement_parks+Roller_coasterDataCollection with get
+    this.GetObjectsOfTypeId("/amusement_parks/roller_coaster")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+ArchitectureDomain : FDR.Freebase.FreebaseDomain
+    member Architects: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+ArchitectDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/architect")
+
+    member Architectural contractors: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Architectural_contractorDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/architectural_contractor")
+
+    member Architectural structure owners: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Architectural_structure_ownerDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/architectural_structure_owner")
+
+    member Architectural styles: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Architectural_styleDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/architectural_style")
+
+    member Architecture firm partners: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Architecture_firm_partnersDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/architecture_firm_partners")
+
+    member Architecture firms: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Architecture_firmDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/architecture_firm")
+
+    member Building Occupants: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Building_occupantDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/building_occupant")
+
+    member Building complexs: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Building_complexDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/building_complex")
+
+    member Building functions: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Building_functionDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/building_function")
+
+    member Buildings: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+BuildingDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/building")
+
+    member Civil engineers: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Civil_engineerDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/civil_engineer")
+
+    member Destruction methods: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Destruction_methodDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/destruction_method")
+
+    member Engineering firms: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Engineering_firmDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/engineering_firm")
+
+    member Engineers: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+EngineerDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/engineer")
+
+    member Houses: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+HouseDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/house")
+
+    member Landscape architects: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Landscape_architectDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/landscape_architect")
+
+    member Landscape projects: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Landscape_projectDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/landscape_project")
+
+    member Light characteristics: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Light_characteristicDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/light_characteristic")
+
+    member Lighthouse construction materials: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Lighthouse_construction_materialDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/lighthouse_construction_material")
+
+    member Lighthouses: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+LighthouseDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/lighthouse")
+
+    member Museum directors: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Museum_directorDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/museum_director")
+
+    member Museums: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+MuseumDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/museum")
+
+    member Skyscrapers: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+SkyscraperDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/skyscraper")
+
+    member Structural engineers: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Structural_engineerDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/structural_engineer")
+
+    member Structures: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+StructureDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/structure")
+
+    member Tower shapes: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Tower_shapeDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/tower_shape")
+
+    member Towers: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+TowerDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/tower")
+
+    member Type of museums: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Type_of_museumDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/type_of_museum")
+
+    member Unrealized designs: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+Unrealized_designDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/unrealized_design")
+
+    member Venues: FreebaseDataProvider+ServiceTypes+Architecture+Architecture+VenueDataCollection with get
+    this.GetObjectsOfTypeId("/architecture/venue")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+AstronomyDomain : FDR.Freebase.FreebaseDomain
+    member Asterisms: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+AsterismDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/asterism")
+
+    member Asteroid Families: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Asteroid_familyDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/asteroid_family")
+
+    member Asteroid Groups: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Asteroid_groupDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/asteroid_group")
+
+    member Asteroid Spectral Types: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Asteroid_spectral_typeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/asteroid_spectral_type")
+
+    member Asteroids: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+AsteroidDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/asteroid")
+
+    member Astronomers: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+AstronomerDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/astronomer")
+
+    member Astronomical Discoveries: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Astronomical_discoveryDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/astronomical_discovery")
+
+    member Astronomical Discovery Statuses: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Astronomical_discovery_statusDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/astronomical_discovery_status")
+
+    member Astronomical Discovery Techniques: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Astronomical_discovery_techniqueDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/astronomical_discovery_technique")
+
+    member Astronomical Observatories: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Astronomical_observatoryDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/astronomical_observatory")
+
+    member Astronomical Survey/Project Organizations: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Astronomical_survey_project_organizationDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/astronomical_survey_project_organization")
+
+    member Celestial Objects: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Celestial_objectDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/celestial_object")
+
+    member Celestial object categories: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Celestial_object_categoryDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/celestial_object_category")
+
+    member Celestial object with coordinate systems: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Celestial_object_with_coordinate_systemDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/celestial_object_with_coordinate_system")
+
+    member Comet groups: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Comet_groupDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/comet_group")
+
+    member Comets: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+CometDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/comet")
+
+    member Constellations: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+ConstellationDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/constellation")
+
+    member Dwarf Planets: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Dwarf_planetDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/dwarf_planet")
+
+    member Extraterrestrial locations: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Extraterrestrial_locationDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/extraterrestrial_location")
+
+    member Galactic clusters: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_clusterDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_cluster")
+
+    member Galactic filaments: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_filamentDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_filament")
+
+    member Galactic groups: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_groupDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_group")
+
+    member Galactic interaction statuses: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_interaction_statusDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_interaction_status")
+
+    member Galactic interaction types: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_interaction_typeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_interaction_type")
+
+    member Galactic shapes: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_shapeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_shape")
+
+    member Galactic superclusters: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galactic_super_clusterDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galactic_super_cluster")
+
+    member Galaxies: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+GalaxyDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galaxy")
+
+    member Galaxy classification codes: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Galaxy_classification_codeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/galaxy_classification_code")
+
+    member Meteor Showers: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Meteor_showerDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/meteor_shower")
+
+    member Meteorite Sources: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Meteorite_sourceDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/meteorite_source")
+
+    member Meteorite classfications: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Meteoric_compositionDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/meteoric_composition")
+
+    member Meteorites: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+MeteoriteDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/meteorite")
+
+    member Moons: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+MoonDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/moon")
+
+    member Near-Earth Object Classifications: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Near_earth_object_classificationDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/near_earth_object_classification")
+
+    member Near-Earth Objects: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Near_earth_objectDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/near_earth_object")
+
+    member Nebulas: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+NebulaDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/nebula")
+
+    member Orbit Types: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Orbit_typeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/orbit_type")
+
+    member Orbital Relationships: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Orbital_relationshipDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/orbital_relationship")
+
+    member Planetographic coordinate systems: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Planetographic_coordinate_systemDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/planetographic_coordinate_system")
+
+    member Planets: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+PlanetDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/planet")
+
+    member Plutoids: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+PlutoidDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/plutoid")
+
+    member Satellite galaxies: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Satellite_galaxyDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/satellite_galaxy")
+
+    member Scattered Disc Objects: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Scattered_disc_objectDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/scattered_disc_object")
+
+    member Spectral Types: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Spectral_typeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/spectral_type")
+
+    member Star Systems: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Star_systemDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/star_system")
+
+    member Star system bodies: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Star_system_bodyDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/star_system_body")
+
+    member Stars: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+StarDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/star")
+
+    member Supernovas: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+SupernovaDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/supernova")
+
+    member Telescope platforms: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Telescope_platformDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/telescope_platform")
+
+    member Telescope principle types: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Telescope_principle_typeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/telescope_principle_type")
+
+    member Telescope types: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Telescope_typeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/telescope_type")
+
+    member Telescopes: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+TelescopeDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/telescope")
+
+    member Trans-Neptunian Objects: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Trans_neptunian_objectDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/trans_neptunian_object")
+
+    member Trans-Neptunian regions: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Trans_neptunian_regionDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/trans_neptunian_region")
+
+    member Type of planetographic features: FreebaseDataProvider+ServiceTypes+Astronomy+Astronomy+Type_of_planetographic_featureDataCollection with get
+    this.GetObjectsOfTypeId("/astronomy/type_of_planetographic_feature")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+AutomotiveDomain : FDR.Freebase.FreebaseDomain
+    member Automobile Companies: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+CompanyDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/company")
+
+    member Automobile Makes: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+MakeDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/make")
+
+    member Automobile Model Years: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Model_yearDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/model_year")
+
+    member Automobile Models: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+ModelDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/model")
+
+    member Automobile generations: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+GenerationDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/generation")
+
+    member Automotive Classes: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Automotive_classDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/automotive_class")
+
+    member Automotive Designers: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+DesignerDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/designer")
+
+    member Body Styles: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Body_styleDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/body_style")
+
+    member Drivelines: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+DrivelineDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/driveline")
+
+    member Engine Types: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Engine_typeDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/engine_type")
+
+    member Engines: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+EngineDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/engine")
+
+    member Exterior Colors: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Exterior_colorDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/exterior_color")
+
+    member Fuel Delivery Methods: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Fuel_delivery_methodDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/fuel_delivery_method")
+
+    member Fuels: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+FuelDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/fuel")
+
+    member Manufacturing Plants: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Manufacturing_plantDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/manufacturing_plant")
+
+    member Option Packages: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Option_packageDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/option_package")
+
+    member Options: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+OptionDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/option")
+
+    member Platforms: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+PlatformDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/platform")
+
+    member Privately Owned Vehicles: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Privately_owned_vehicleDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/privately_owned_vehicle")
+
+    member Transmission Classifications: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Transmission_typeDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/transmission_type")
+
+    member Transmissions: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+TransmissionDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/transmission")
+
+    member Trim Levels: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Trim_levelDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/trim_level")
+
+    member Truck Trim Levels: FreebaseDataProvider+ServiceTypes+Automotive+Automotive+Truck_trim_levelDataCollection with get
+    this.GetObjectsOfTypeId("/automotive/truck_trim_level")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+AviationDomain : FDR.Freebase.FreebaseDomain
+    member Aircraft: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft")
+
+    member Aircraft Engine Types: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_engine_type")
+
+    member Aircraft Lines: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_line")
+
+    member Aircraft Owners: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_owner")
+
+    member Aircraft accident types: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/accident_type")
+
+    member Aircraft designers: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_designer")
+
+    member Aircraft manufacturers: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_manufacturer")
+
+    member Aircraft models: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_model")
+
+    member Aircraft types: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aircraft_type")
+
+    member Airline alliances: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Airline_allianceDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airline_alliance")
+
+    member Airlines: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airline")
+
+    member Airport operators: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Airport_operatorDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airport_operator")
+
+    member Airport runway surfaces: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Airport_runway_surfaceDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airport_runway_surface")
+
+    member Airport terminals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Airport_terminalDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airport_terminal")
+
+    member Airport types: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Airport_typeDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airport_type")
+
+    member Airports: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirportDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airport")
+
+    member Aviation incidents: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Airliner_accidentDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/airliner_accident")
+
+    member Aviation waypoints: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aviation_waypointDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/aviation_waypoint")
+
+    member IATA airline designators: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Iata_airline_designatorDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/iata_airline_designator")
+
+    member ICAO airline designators: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Icao_airline_designatorDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/icao_airline_designator")
+
+    member Waypoint types: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Waypoint_typeDataCollection with get
+    this.GetObjectsOfTypeId("/aviation/waypoint_type")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+AwardsDomain : FDR.Freebase.FreebaseDomain
+    member Award Judges: FreebaseDataProvider+ServiceTypes+Award+Award+Award_judgeDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_judge")
+
+    member Award Nominees: FreebaseDataProvider+ServiceTypes+Award+Award+Award_nomineeDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_nominee")
+
+    member Award Presenting Organizations: FreebaseDataProvider+ServiceTypes+Award+Award+Award_presenting_organizationDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_presenting_organization")
+
+    member Award Winners: FreebaseDataProvider+ServiceTypes+Award+Award+Award_winnerDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_winner")
+
+    member Award categories: FreebaseDataProvider+ServiceTypes+Award+Award+Award_categoryDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_category")
+
+    member Award ceremonies: FreebaseDataProvider+ServiceTypes+Award+Award+Award_ceremonyDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_ceremony")
+
+    member Award disciplines: FreebaseDataProvider+ServiceTypes+Award+Award+Award_disciplineDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_discipline")
+
+    member Award-Nominated Works: FreebaseDataProvider+ServiceTypes+Award+Award+Award_nominated_workDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_nominated_work")
+
+    member Award-Winning Works: FreebaseDataProvider+ServiceTypes+Award+Award+Award_winning_workDataCollection with get
+    this.GetObjectsOfTypeId("/award/award_winning_work")
+
+    member Awards: FreebaseDataProvider+ServiceTypes+Award+Award+AwardDataCollection with get
+    this.GetObjectsOfTypeId("/award/award")
+
+    member Competition types: FreebaseDataProvider+ServiceTypes+Award+Award+Competition_typeDataCollection with get
+    this.GetObjectsOfTypeId("/award/competition_type")
+
+    member Competitions: FreebaseDataProvider+ServiceTypes+Award+Award+CompetitionDataCollection with get
+    this.GetObjectsOfTypeId("/award/competition")
+
+    member Competitors: FreebaseDataProvider+ServiceTypes+Award+Award+CompetitorDataCollection with get
+    this.GetObjectsOfTypeId("/award/competitor")
+
+    member Hall of fame disciplines: FreebaseDataProvider+ServiceTypes+Award+Award+Hall_of_fame_disciplineDataCollection with get
+    this.GetObjectsOfTypeId("/award/hall_of_fame_discipline")
+
+    member Hall of fame inductees: FreebaseDataProvider+ServiceTypes+Award+Award+Hall_of_fame_inducteeDataCollection with get
+    this.GetObjectsOfTypeId("/award/hall_of_fame_inductee")
+
+    member Hall of fame induction categories: FreebaseDataProvider+ServiceTypes+Award+Award+Hall_of_fame_induction_categoryDataCollection with get
+    this.GetObjectsOfTypeId("/award/hall_of_fame_induction_category")
+
+    member Hall of fames: FreebaseDataProvider+ServiceTypes+Award+Award+Hall_of_fameDataCollection with get
+    this.GetObjectsOfTypeId("/award/hall_of_fame")
+
+    member Long-list nominees: FreebaseDataProvider+ServiceTypes+Award+Award+Long_list_nomineeDataCollection with get
+    this.GetObjectsOfTypeId("/award/long_list_nominee")
+
+    member Long-listed works: FreebaseDataProvider+ServiceTypes+Award+Award+Long_listed_workDataCollection with get
+    this.GetObjectsOfTypeId("/award/long_listed_work")
+
+    member Ranked items: FreebaseDataProvider+ServiceTypes+Award+Award+Ranked_itemDataCollection with get
+    this.GetObjectsOfTypeId("/award/ranked_item")
+
+    member Ranked list compilers: FreebaseDataProvider+ServiceTypes+Award+Award+Ranked_list_compilerDataCollection with get
+    this.GetObjectsOfTypeId("/award/ranked_list_compiler")
+
+    member Ranked lists: FreebaseDataProvider+ServiceTypes+Award+Award+Ranked_listDataCollection with get
+    this.GetObjectsOfTypeId("/award/ranked_list")
+
+    member Recurring competitions: FreebaseDataProvider+ServiceTypes+Award+Award+Recurring_competitionDataCollection with get
+    this.GetObjectsOfTypeId("/award/recurring_competition")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+BaseballDomain : FDR.Freebase.FreebaseDomain
+    member Baseball Coaches: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_coachDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_coach")
+
+    member Baseball Coaching Positions: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_coaching_positionDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_coaching_position")
+
+    member Baseball Divisions: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_divisionDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_division")
+
+    member Baseball Leagues: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_leagueDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_league")
+
+    member Baseball Managers: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_managerDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_manager")
+
+    member Baseball Players: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_playerDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_player")
+
+    member Baseball Positions: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_positionDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_position")
+
+    member Baseball Teams: FreebaseDataProvider+ServiceTypes+Baseball+Baseball+Baseball_teamDataCollection with get
+    this.GetObjectsOfTypeId("/baseball/baseball_team")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+BasketballDomain : FDR.Freebase.FreebaseDomain
+    member Basketball Coaches: FreebaseDataProvider+ServiceTypes+Basketball+Basketball+Basketball_coachDataCollection with get
+    this.GetObjectsOfTypeId("/basketball/basketball_coach")
+
+    member Basketball Conferences: FreebaseDataProvider+ServiceTypes+Basketball+Basketball+Basketball_conferenceDataCollection with get
+    this.GetObjectsOfTypeId("/basketball/basketball_conference")
+
+    member Basketball Divisions: FreebaseDataProvider+ServiceTypes+Basketball+Basketball+Basketball_divisionDataCollection with get
+    this.GetObjectsOfTypeId("/basketball/basketball_division")
+
+    member Basketball Players: FreebaseDataProvider+ServiceTypes+Basketball+Basketball+Basketball_playerDataCollection with get
+    this.GetObjectsOfTypeId("/basketball/basketball_player")
+
+    member Basketball Positions: FreebaseDataProvider+ServiceTypes+Basketball+Basketball+Basketball_positionDataCollection with get
+    this.GetObjectsOfTypeId("/basketball/basketball_position")
+
+    member Basketball Teams: FreebaseDataProvider+ServiceTypes+Basketball+Basketball+Basketball_teamDataCollection with get
+    this.GetObjectsOfTypeId("/basketball/basketball_team")
+
+
+class FreebaseDataProvider+ServiceTypes+DomainObjects+BicyclesDomain : FDR.Freebase.FreebaseDomain
+    member Bicycle manufacturers: FreebaseDataProvider+ServiceTypes+Bicycles+Bicycles+Bicycle_manufacturerDataCollection with get
+    this.GetObjectsOfTypeId("/bicycles/bicycle_manufacturer")
+
+    member Bicycle models: FreebaseDataProvider+ServiceTypes+Bicycles+Bicycles+Bicycle_modelDataCollection with get
+    this.GetObjectsOfTypeId("/bicycles/bicycle_model")
+
+    member Bicycle types: FreebaseDataProvider+ServiceTypes+Bicycles+Bicycles+Bicycle_typeDataCollection with get
+    this.GetObjectsOfTypeId("/bicycles/bicycle_type")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineDataCollection
+    member Individuals: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineDataIndividuals with get
+    FreebaseIndividuals._GetIndividualsObject((this :> obj))
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Aircraft hijacking: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeData with get
+    this.GetIndividualById("/aviation/accident_type", "/en/aircraft_hijacking")
+
+    member Bomb: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeData with get
+    this.GetIndividualById("/aviation/accident_type", "/en/bomb")
+
+    member Fire: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeData with get
+    this.GetIndividualById("/aviation/accident_type", "/en/fire")
+
+    member Sabotage: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeData with get
+    this.GetIndividualById("/aviation/accident_type", "/en/sabotage")
+
+    member Wind shear: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Accident_typeData with get
+    this.GetIndividualById("/aviation/accident_type", "/en/wind_shear")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Autogyro: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftData with get
+    this.GetIndividualById("/aviation/aircraft", "/en/autogyro")
+
+    member Bockscar: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftData with get
+    this.GetIndividualById("/aviation/aircraft", "/en/bockscar")
+
+    member Enola Gay: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftData with get
+    this.GetIndividualById("/aviation/aircraft", "/en/enola_gay")
+
+    member LZ 129 Hindenburg: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftData with get
+    this.GetIndividualById("/aviation/aircraft", "/en/lz_129_hindenburg")
+
+    member QinetiQ 1: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AircraftData with get
+    this.GetIndividualById("/aviation/aircraft", "/en/qinetiq_1")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Alexander Graham Bell: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerData with get
+    this.GetIndividualById("/aviation/aircraft_designer", "/en/alexander_graham_bell")
+
+    member Boeing: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerData with get
+    this.GetIndividualById("/aviation/aircraft_designer", "/en/boeing")
+
+    member Howard Hughes: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerData with get
+    this.GetIndividualById("/aviation/aircraft_designer", "/en/howard_hughes")
+
+    member Kelly Johnson: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerData with get
+    this.GetIndividualById("/aviation/aircraft_designer", "/en/clarence_johnson")
+
+    member R. J. Mitchell: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_designerData with get
+    this.GetIndividualById("/aviation/aircraft_designer", "/en/r_j_mitchell")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Diesel engine: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeData with get
+    this.GetIndividualById("/aviation/aircraft_engine_type", "/en/diesel_engine")
+
+    member Internal combustion engine: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeData with get
+    this.GetIndividualById("/aviation/aircraft_engine_type", "/en/internal_combustion_engine")
+
+    member Jet engine: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeData with get
+    this.GetIndividualById("/aviation/aircraft_engine_type", "/en/jet_engine")
+
+    member Reciprocating engine: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeData with get
+    this.GetIndividualById("/aviation/aircraft_engine_type", "/en/reciprocating_engine")
+
+    member Rotary engine: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_engine_typeData with get
+    this.GetIndividualById("/aviation/aircraft_engine_type", "/en/rotary_engine")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Airbus A320 family: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineData with get
+    this.GetIndividualById("/aviation/aircraft_line", "/en/airbus_a320")
+
+    member Bell OH-58 Kiowa: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineData with get
+    this.GetIndividualById("/aviation/aircraft_line", "/en/oh-58_kiowa")
+
+    member Boeing 737: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineData with get
+    this.GetIndividualById("/aviation/aircraft_line", "/en/boeing_737")
+
+    member Northrop F-5: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineData with get
+    this.GetIndividualById("/aviation/aircraft_line", "/en/f-5_freedom_fighter")
+
+    member V bomber: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_lineData with get
+    this.GetIndividualById("/aviation/aircraft_line", "/en/v_bomber")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Beechcraft: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerData with get
+    this.GetIndividualById("/aviation/aircraft_manufacturer", "/en/beechcraft")
+
+    member Boeing: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerData with get
+    this.GetIndividualById("/aviation/aircraft_manufacturer", "/en/boeing")
+
+    member Bombardier Inc.: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerData with get
+    this.GetIndividualById("/aviation/aircraft_manufacturer", "/en/bombardier")
+
+    member Cessna: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerData with get
+    this.GetIndividualById("/aviation/aircraft_manufacturer", "/en/cessna")
+
+    member General Motors: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_manufacturerData with get
+    this.GetIndividualById("/aviation/aircraft_manufacturer", "/en/general_motors")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Boeing 767: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelData with get
+    this.GetIndividualById("/aviation/aircraft_model", "/en/boeing_767")
+
+    member Boeing 767-200: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelData with get
+    this.GetIndividualById("/aviation/aircraft_model", "/en/boeing_767_200")
+
+    member Boeing 767-300: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelData with get
+    this.GetIndividualById("/aviation/aircraft_model", "/en/boeing_767_300")
+
+    member Northrop F-5: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelData with get
+    this.GetIndividualById("/aviation/aircraft_model", "/en/f-5_freedom_fighter")
+
+    member Northrop T-38 Talon: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_modelData with get
+    this.GetIndividualById("/aviation/aircraft_model", "/en/t-38_talon")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member All Nippon Airways: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerData with get
+    this.GetIndividualById("/aviation/aircraft_owner", "/en/all_nippon_airways")
+
+    member American Airlines: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerData with get
+    this.GetIndividualById("/aviation/aircraft_owner", "/en/american_airlines")
+
+    member Delta Air Lines: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerData with get
+    this.GetIndividualById("/aviation/aircraft_owner", "/en/delta_air_lines")
+
+    member United States Navy: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerData with get
+    this.GetIndividualById("/aviation/aircraft_owner", "/en/united_states_navy")
+
+    member Vietnam Air Force: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_ownerData with get
+    this.GetIndividualById("/aviation/aircraft_owner", "/en/vietnam_air_force")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Bomber: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeData with get
+    this.GetIndividualById("/aviation/aircraft_type", "/en/bomber")
+
+    member Fighter aircraft: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeData with get
+    this.GetIndividualById("/aviation/aircraft_type", "/en/fighter_aircraft")
+
+    member Kamikaze: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeData with get
+    this.GetIndividualById("/aviation/aircraft_type", "/en/kamikaze")
+
+    member Kite: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeData with get
+    this.GetIndividualById("/aviation/aircraft_type", "/en/kite")
+
+    member VTOL: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+Aircraft_typeData with get
+    this.GetIndividualById("/aviation/aircraft_type", "/en/vtol")
+
+
+class FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineDataIndividuals : FDR.Freebase.FreebaseIndividuals
+    member Braathens: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineData with get
+    this.GetIndividualById("/aviation/airline", "/en/braathens")
+
+    member British Airways: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineData with get
+    this.GetIndividualById("/aviation/airline", "/en/british_airways")
+
+    member Delta Air Lines: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineData with get
+    this.GetIndividualById("/aviation/airline", "/en/delta_air_lines")
+
+    member EVA Air: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineData with get
+    this.GetIndividualById("/aviation/airline", "/en/eva_air")
+
+    member United Airlines: FreebaseDataProvider+ServiceTypes+Aviation+Aviation+AirlineData with get
+    this.GetIndividualById("/aviation/airline", "/en/united_airlines")
+
+

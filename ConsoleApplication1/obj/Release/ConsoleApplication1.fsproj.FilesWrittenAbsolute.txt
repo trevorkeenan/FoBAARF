@@ -1,0 +1,5 @@
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/obj/Release/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Release/FSharp.Charting.dll
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Release/FSharp.Data.dll
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Release/FSharp.Data.DesignTime.dll
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Release/FSharp.Core.dll

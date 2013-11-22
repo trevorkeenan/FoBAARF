@@ -1,0 +1,9 @@
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.fs
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Debug/ConsoleApplication1.exe.mdb
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Debug/ConsoleApplication1.exe
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/obj/Debug/ConsoleApplication1.exe
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/obj/Debug/ConsoleApplication1.exe.mdb
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Debug/FSharp.Charting.dll
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Debug/FSharp.Data.dll
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Debug/FSharp.Data.DesignTime.dll
+/Users/trevorkeenan/Dropbox/FoBAAR/F#/ConsoleApplication1/bin/Debug/FSharp.Core.dll
